@@ -1,0 +1,10 @@
+.story {
+    &__pictures {
+        grid-column: full-start/col-end 4;
+        background-color: red;
+    }
+    &__text {
+        grid-column: col-start 5/full-end;
+        background-color: green;
+    }
+}

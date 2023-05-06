@@ -1,0 +1,15 @@
+ %heading {
+    font-weight: 400;
+ }
+
+ .heading-4 {
+    @extend %heading;
+    font-size: 1.9rem;
+    &--black {
+        color:$color-grey-dark-1;
+    }
+    &--white {
+      color: $color-grey-light-1;
+    }
+
+ }
