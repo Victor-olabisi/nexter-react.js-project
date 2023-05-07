@@ -1,6 +1,13 @@
  %heading {
     font-weight: 400;
  }
+ .heading-1 {
+   @extend %heading;
+   font-size: 4rem;
+   text-transform: capitalize;
+   color: white;
+
+}
 
  .heading-4 {
     @extend %heading;
@@ -12,4 +19,10 @@
       color: $color-grey-light-1;
     }
 
+ }
+ .heading-3 {
+   @extend %heading;
+   font-size: 1.5rem;
+   text-transform:uppercase;
+   color: $color-primary-dark;
  }

@@ -1,4 +1,47 @@
 .header {
     grid-column: full-start/col-end 6;
-    background-color: blue;
+    // background-color: blue;
+    display: grid;
+    grid-template-rows: 1fr min-content minmax(6rem,min-content) 1fr ;
+    grid-row-gap: 1.5rem;
+    padding: 8rem;
+    padding-top: 4rem;
+    background-image:linear-gradient(rgba(16, 29, 44, 0.93),rgba(16, 29, 44, 0.93)), url('./img/hero.jpeg');
+    // justify-content: center;
+    &__logo {
+        height: 3rem;
+        justify-self: center;
+    }
+    &__btn {
+        justify-self: start;
+        align-self: start;
+    }
+    &__seenon {
+        display: grid;
+        grid-template-columns: 1fr max-content 1fr;
+        column-gap: 1.5rem;
+        color: #aaa;
+        align-items: center;
+        // justify-self: stretch;
+        font-size: 1.6rem;
+        &::before,
+        &::after {
+            content: '';
+            display: block;
+            height: 1px;
+            // width: 60vh;
+            background-color: currentColor;
+        }
+    }
+    &__seenon-div{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        column-gap: 3rem;
+        justify-items: center;
+        align-items: center;
+    }
+    &__seenon-logo {
+        height: 2.5rem;
+    }
 }
+
