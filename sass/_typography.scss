@@ -12,6 +12,7 @@
  .heading-4 {
     @extend %heading;
     font-size: 1.9rem;
+    text-transform: capitalize;
     &--black {
         color:$color-grey-dark-1;
     }
@@ -22,7 +23,11 @@
  }
  .heading-3 {
    @extend %heading;
-   font-size: 1.5rem;
+   font-size: 1.7rem;
    text-transform:uppercase;
-   color: $color-primary-dark;
+   color: $color-primary;
+ }
+
+ p {
+  color: $color-grey-light-2;
  }

@@ -1,5 +1,36 @@
 .footer {
      grid-column: full-start/full-end;
-    background-color: blue;
+    background-color: $color-secondary;
     color: white;
+    padding: 8rem;
+    display: grid;
+    row-gap: 6rem;
+    &__items {
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(15rem,1fr));
+        justify-items: center;
+        column-gap: 3rem;
+    }
+    &__link {
+        color:$color-grey-light-2;
+        text-decoration: none;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        display: inline-block;
+        text-align: center;
+        line-height: 1.4;
+        padding: 2rem;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+            background-color: #1C2937;
+            transform: translateY(-0.5rem);
+        }
+    }
+    p {
+        text-align: center;
+        width: 70%;
+        margin: 0 auto;
+        line-height: 1.7;
+    }
 }

@@ -2,6 +2,9 @@ import { useState } from 'react'
 import Feature from './Feature'
 import {features} from '../data.js'
 import Header from './Header';
+import Realtors from './Realtors'
+import Footer from './Footer';
+
 
 
 function App() {
@@ -11,8 +14,8 @@ function App() {
     <>
       <div className="container">
         <div className="sidebar">sidebar</div>
-            <Header />
-        <div className="realtors">realtors</div>
+        <Header />
+        <Realtors />
         <section className="features">
           {features.map((feature) => {
             return <Feature key={feature.id} feature={feature} />;
@@ -22,7 +25,7 @@ function App() {
         <section className="story__text">story text</section>
         <section className="home">home</section>
         <section className="gallery">gallery</section>
-        <footer className="footer">footer</footer>
+        <Footer/>
       </div>
     </>
   );
