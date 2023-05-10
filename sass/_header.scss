@@ -1,13 +1,15 @@
 .header {
     grid-column: full-start/col-end 6;
-    // background-color: blue;
     display: grid;
-    grid-template-rows: 1fr min-content minmax(6rem,min-content) 1fr ;
+    grid-template-rows: 1fr min-content min-content 1fr ;
+    grid-template-columns:minmax(min-content,max-content) ;
     grid-row-gap: 1.5rem;
     padding: 8rem;
     padding-top: 4rem;
     background-image:linear-gradient(rgba(16, 29, 44, 0.93),rgba(16, 29, 44, 0.93)), url('./img/hero.jpeg');
-    // justify-content: center;
+    @media screen and (max-width:$md-medium){
+        grid-column: full-start/full-end;
+    }
     
     &__logo {
         height: 3rem;
@@ -42,7 +44,8 @@
         align-items: center;
     }
     &__seenon-logo {
-        height: 2.5rem;
+        max-height: 2.5rem;
+        max-width: 100%;
     }
 }
 

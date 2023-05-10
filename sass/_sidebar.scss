@@ -1,5 +1,41 @@
 .sidebar {
-    background-color: #C69963;
-    grid-row: 1/-1;
-    grid-column: sidebar-start/sidebar-end;
+  background-color: #c69963;
+  grid-row: 1/-1;
+  grid-column: sidebar-start/sidebar-end;
+
+  padding-top: 3rem;
+  padding-left:1.5rem ;
+  @media screen and (max-width: $md-large) {
+    grid-row: 1/2;
+    grid-column: full-start/full-end;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  &__icon {
+    height: 2px;
+    width: 4.5rem;
+    background-color: white;
+    cursor: pointer;
+    @media screen and (max-width:$md-large) {
+    margin-right: 2rem;
+      
+    } 
+
+    &::before,
+    &::after {
+      width: 0.4.5rem;
+      content: ' ';
+      height: 2px;
+      display: block;
+      background:white;
+    }
+    &::before {
+      transform: translateY(-1.4rem);
+    }
+    &::after {
+      transform: translateY(1rem);
+    }
+  }
 }

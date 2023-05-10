@@ -1,14 +1,24 @@
 .realtors {
     grid-column: col-start 7/full-end;
     background-color: #101D2C;
-    padding: 6rem;
+    padding: 4rem;
     justify-content: center;
     align-items: center;
     display: grid;
+    @media screen and (max-width:$md-medium) {
+        grid-row: 3/4;
+        grid-column: 1/-1;
+        row-gap: 3rem;
+    }
     &__container {
         display: grid;
         row-gap: 3rem;
         transform: translateY(-1.5rem);
+         @media screen and (max-width:$md-medium){
+                grid-template-columns: repeat(3, 1fr);
+                column-gap: 3rem;
+                // row-gap: 0;
+            }
     }
 
     .realtor {
@@ -16,6 +26,7 @@
             grid-template-columns: auto 1fr;
             column-gap: 1.5rem;
             align-items: center;
+           
 
         &__img {
             height: 7rem;

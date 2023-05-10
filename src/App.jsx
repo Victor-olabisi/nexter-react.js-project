@@ -5,15 +5,14 @@ import Header from './Header';
 import Realtors from './Realtors'
 import Footer from './Footer';
 
-
-
 function App() {
-  // const [data, setData] = useState(features)
- 
+  const [data, setData] = useState(features)
   return (
     <>
       <div className="container">
-        <div className="sidebar">sidebar</div>
+        <div className="sidebar">
+          <div className="sidebar__icon"></div>
+        </div>
         <Header />
         <Realtors />
         <section className="features">
