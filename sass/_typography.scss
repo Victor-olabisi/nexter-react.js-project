@@ -8,6 +8,14 @@
    color: white;
 
 }
+.heading-2 {
+  font-size: 3rem;
+  color:black;
+  text-transform: capitalize;
+  font-style: italic;
+  letter-spacing: 3px;
+  margin-bottom:3rem;
+}
 
  .heading-4 {
     @extend %heading;

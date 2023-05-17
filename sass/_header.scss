@@ -1,7 +1,7 @@
 .header {
     grid-column: full-start/col-end 6;
     display: grid;
-    grid-template-rows: 1fr min-content min-content 1fr ;
+    grid-template-rows: 1fr min-content min-content 1fr;
     grid-template-columns:minmax(min-content,max-content) ;
     grid-row-gap: 1.5rem;
     padding: 8rem;
@@ -9,6 +9,11 @@
     background-image:linear-gradient(rgba(16, 29, 44, 0.93),rgba(16, 29, 44, 0.93)), url('./img/hero.jpeg');
     @media screen and (max-width:$md-medium){
         grid-column: full-start/full-end;
+    }
+     @media screen and (max-width:$md-small){
+        padding: 3rem;
+    // grid-template-rows: min15rem min-content min-content 15rem;/
+        
     }
     
     &__logo {

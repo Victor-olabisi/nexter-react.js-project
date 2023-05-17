@@ -4,6 +4,7 @@ import {features} from '../data.js'
 import Header from './Header';
 import Realtors from './Realtors'
 import Footer from './Footer';
+import Story from './Story';
 
 function App() {
   const [data, setData] = useState(features)
@@ -20,11 +21,10 @@ function App() {
             return <Feature key={feature.id} feature={feature} />;
           })}
         </section>
-        <div className="story__pictures">story pictures</div>
-        <section className="story__text">story text</section>
+        <Story/>
         <section className="home">home</section>
         <section className="gallery">gallery</section>
-        <Footer/>
+        <Footer />
       </div>
     </>
   );

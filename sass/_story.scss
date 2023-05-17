@@ -1,10 +1,64 @@
 .story {
     &__pictures {
         grid-column: full-start/col-end 4;
-        background-color: red;
+        // background-color: blue;
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        grid-template-rows: repeat(6,1fr);
+        background-image: linear-gradient(rgba(198, 153, 99, 0.5), rgba(198, 153, 99, 0.5)), url(../img/back.jpg);
+        background-size: cover;
+
+        @media screen and (max-width: $md-medium) {
+            grid-column: full-start/full-end;
+            padding: 6rem;
+        }
+
+       &--1 {
+            width: 100%;
+            grid-column: 2/6;
+            grid-row: 2/6;
+            align-self: center;
+             @media screen and (max-width: $md-medium) {
+            grid-column: 1/5;
+            height: auto;
+            grid-row: 1/-1;
+        }
+        }
+        &--2 {
+            width: 115%;
+            grid-column: 4/8;
+            grid-row: 4/7;
+            align-self: center;
+            z-index: 2;
+             @media screen and (max-width: $md-medium) {
+                width: 100%;
+                height: auto;
+                // grid-column: 4/6;
+                grid-row: 2/6;
+            // grid-row: 5/6;
+        }
+        }
     }
+     
     &__text {
         grid-column: col-start 5/full-end;
-        background-color: green;
+        background-color:$color-grey-light-1;
+        padding: 10rem;
+        display: flex;
+        flex-direction: column;
+ @media screen and (max-width: $md-medium) {
+            grid-column: full-start/full-end;
+            grid-row: 5/6;
+        }
+          @media screen and (max-width:$md-small){
+        padding: 5rem;
+        
     }
+    }
+      
+    &__btn {
+        align-self: flex-start;
+        margin-top: 3rem;
+    }
+       
 }

@@ -19,6 +19,10 @@
                 column-gap: 3rem;
                 // row-gap: 0;
             }
+        @media screen and (max-width:$md-small){
+            grid-template-columns: none;
+            column-gap: 0;
+        }
     }
 
     .realtor {
