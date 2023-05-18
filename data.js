@@ -36,3 +36,54 @@ export const features = [
     text: 'Pariatur voluptatibus quidem consequatur harum, voluptatum mollitia quae.',
   },
 ];
+
+export const homes = [
+  {
+    Image: './img/house-1.jpeg',
+    name: 'Beautiful Familiy House',
+    country: 'USA',
+    rooms: '5 rooms',
+    area: '325m',
+    price: '$1,200,000',
+  },
+  {
+    Image: './img/house-2.jpeg',
+    name: 'modern glass villa',
+    country: 'canada',
+    rooms: '6 rooms',
+    area: '450m',
+    price: '$2,750,000',
+  },
+  {
+    Image: './img/house-3.jpeg',
+    name: 'cozy country house',
+    country: 'UK',
+    rooms: '4 rooms',
+    area: '200m',
+    price: '$850,000',
+  },
+  {
+    Image: './img/house-4.jpeg',
+    name: 'Large Rustical Villa',
+    country: 'portugal',
+    rooms: '6 rooms',
+    area: '480m',
+    price: '$1,950,000',
+  },
+  {
+    Image: './img/house-5.jpeg',
+    name: 'Majestic Palace House',
+    country: 'Germany',
+    rooms: '18 rooms',
+    area: '4,325m',
+    price: '$9,500,000',
+  },
+  {
+    Image: './img/house-6.jpeg',
+    name: 'Modern Familiy Apartment',
+    country: 'Italu',
+    rooms: '3 rooms',
+    area: '180m',
+    price: '$600,000',
+  },
+];
