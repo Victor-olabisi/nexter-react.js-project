@@ -1,14 +1,13 @@
-import { useState } from 'react';
-import Feature from './Feature';
-import { features,homes } from '../data.js';
 import Header from './Header';
 import Realtors from './Realtors';
 import Footer from './Footer';
 import Story from './Story';
-import Home from './Home';
+import Homes from './Homes';
+import Features from './Features'
+import '../sass/main.scss';
+import Gallerys from './Gallerys';
 
 function App() {
-  const [data, setData] = useState(features);
   return (
     <>
       <div className="container">
@@ -17,16 +16,10 @@ function App() {
         </div>
         <Header />
         <Realtors />
-        <section className="features">
-          {features.map((feature) => {
-            return <Feature key={feature.id} feature={feature} />;
-          })}
-        </section>
+        <Features/>
         <Story />
-        <section className="homes">
-          {homes.map(home => <Home key={home.id } home={home } />)}
-        </section>
-        <section className="gallery">gallery</section>
+        <Homes />
+        <Gallerys/>
         <Footer />
       </div>
     </>

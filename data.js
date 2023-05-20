@@ -36,7 +36,14 @@ export const features = [
     text: 'Pariatur voluptatibus quidem consequatur harum, voluptatum mollitia quae.',
   },
 ];
-
+export const links = [
+  { id: 1, text: ' find your dream home' },
+  { id: 2, text: 'request proposal' },
+  { id: 3, text: 'download home planner' },
+  { id: 4, text: 'contact us' },
+  { id: 5, text: 'submit ur properties' },
+  { id: 6, text: 'come work with us' },
+];
 export const homes = [
   {
     Image: './img/house-1.jpeg',
@@ -87,3 +94,20 @@ export const homes = [
     price: '$600,000',
   },
 ];
+
+export const gallerys = [
+  {id:1,image:'./img/gal-1.jpeg'},
+  {id:2,image:'./img/gal-2.jpeg'},
+  {id:3,image:'./img/gal-3.jpeg'},
+  {id:4,image:'./img/gal-4.jpeg'},
+  {id:5,image:'./img/gal-5.jpeg'},
+  {id:6,image:'./img/gal-6.jpeg'},
+  {id:7,image:'./img/gal-7.jpeg'},
+  {id:8,image:'./img/gal-8.jpeg'},
+  {id:9,image:'./img/gal-9.jpeg'},
+  {id:10,image:'./img/gal-10.jpeg'},
+  {id:11,image:'./img/gal-11.jpeg'},
+  {id:12,image:'./img/gal-12.jpeg'},
+  {id:13,image:'./img/gal-13.jpeg'},
+  {id:14,image:'./img/gal-14.jpeg'},
+]
